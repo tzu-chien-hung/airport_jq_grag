@@ -33,12 +33,16 @@ function handleComplete(evt,comp) {
 	stage.enableMouseOver();	
     stage.addChild(exportRoot);
 
-    var location = exportRoot.location;
-    location.addEventListener("click",()=>{
+    // var location = exportRoot.location;
+    // location.addEventListener("click",()=>{
+	// 	document.getElementById("myFormbg").style.display = "block";
+    //     document.getElementById("myForm").style.display = "block";
+    // })
+	var pop = document.getElementById("pop");
+	pop.addEventListener("click",()=>{
 		document.getElementById("myFormbg").style.display = "block";
         document.getElementById("myForm").style.display = "block";
     })
-
     var close = document.getElementById("close");
     close.addEventListener("click",()=>{
 		document.getElementById("myFormbg").style.display = "none";

@@ -106,7 +106,8 @@
             color: darkslateblue;
             cursor: pointer;
         }
-        .the_video{
+
+        .the_video {
             text-align: center;
         }
     </style>
@@ -116,7 +117,7 @@
 <body onload="init();" style="margin:0px;" id="body">
 
     <div id="draggableArea">
-        <header style="width: 100%; position:fixed; top:0; z-index:1;">
+        <header style="width: 100%; position:fixed; top:0; z-index:100;">
             <div>
                 <div class="ham_all">
                     <input id="nav_toggle" type="checkbox">
@@ -150,6 +151,9 @@
             </div>
         </header>
         <div id="draggable" class="ui-widget-content">
+            <div id="pop" style="cursor: pointer; position: absolute; top: 100px; left: 100px; width:100px; height: 100px; z-index: 10;">
+                <img style="width: 100%;" src="./images/TryTrySee.png" alt="">
+            </div>
             <div class="content">
                 <div id="animation_container"
                     style="background-color:rgba(255, 255, 255, 1.00); width:1024px; height:768px">
@@ -167,10 +171,11 @@
                 太陽（又稱日），是太陽系中心的恆星，它幾乎是熱電漿與磁場交織著的一個理想球體。它的直徑大約是1,392,000（1.392×106）公里，相當於地球直徑的109.3倍；質量大約是2×1030千克（地球的333,000倍），約佔太陽系總質量的99.86%。從化學組成來看，太陽質量的大約四分之三是氫（~73%），剩下的幾乎都是氦（~25%），包括氧、碳、氖、鐵和其他的重元素質量少於2%。
             </div>
             <div class="the_video">
-                <video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop> 
+                <video width="350" controls autoplay disablePictureInPicture controlsList="nodownload"
+                    poster="https://picsum.photos/id/406/500/300" muted loop>
                     <source src="./images/file.mp4" type="video/mp4">
                     出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。
-                  </video>
+                </video>
             </div>
         </div>
 
