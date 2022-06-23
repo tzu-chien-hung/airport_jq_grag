@@ -1,0 +1,161 @@
+.ham_all {
+  position: relative;
+  right: 0px;
+}
+  
+#nav_toggle {
+  display: none;
+}
+.ham {
+  display: none;
+}
+
+/* Nav Style */
+
+.menu {
+  background: #fff;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_logo{
+  width: 140px;
+  padding: 10px;
+}
+.menu_logo_a{
+  width: 100px;
+}
+.menu_logo_a img{
+  width: 100%;
+}
+.menu_list {
+  list-style: none;
+  font-size: 24px; 
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu_item {
+  padding-right: 20px;
+  line-height: 82px;
+}
+
+.menu_link {
+  text-decoration: none;
+  color: gray;
+}
+
+.menu_bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(105, 102, 102, 0.437);
+  display:none;
+}
+@media (max-width: 768px) {
+  .ham_all {
+    position: relative;
+    right: 0px;
+  }
+  
+  .ham {
+    width: 65px;
+    height: 65px;
+    /* border-radius: 50%; */
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+    /* background-color: #fff; */
+    cursor: pointer;
+  }
+  
+  .ham_origin {
+    position: absolute;
+    top: 50%;
+    right: 62%;
+  }
+  
+  .ham_bar {
+    height: 5px;
+    width: 40px;
+    position: absolute;
+    background: gray;
+    margin: -1px 0 0 -13px;
+    transition: all .5s;
+    border-radius: 30px;
+  
+  }
+  
+  .ham_bar_top {
+    transform: translateY(-14px);
+  }
+  
+  .ham_bar_bottom {
+    transform: translateY(14px);
+  }
+  
+  #nav_toggle:checked~.ham .ham_bar_middle {
+    opacity: 0;
+  }
+  
+  #nav_toggle:checked~.ham .ham_bar_top {
+    transform: rotate(-45deg);
+  }
+  
+  #nav_toggle:checked~.ham .ham_bar_bottom {
+    transform: rotate(45deg);
+  }
+  
+  /* Nav Style */
+  
+  .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*   padding: 30px; */
+    background: #fff;
+    /* 用 translate 把選單藏到畫面右邊去 */
+    transform: translateX(100%);
+    transition: transform .5s;
+    width: 320px;
+    z-index: 1;
+  }
+  .menu_logo{
+    display: none;
+  }
+  #nav_toggle:checked~.menu {
+    transform: none;
+  }
+  
+  .menu_list {
+    margin-top: 80px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    font-size: 26px;
+    display: block;
+    width: 320px;
+  }
+  
+  .menu_item {
+    padding: 10px;
+  }
+  
+  .menu_link {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  .menu_bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 102, 102, 0.437);
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {}
+

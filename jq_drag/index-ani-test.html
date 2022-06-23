@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani2</title>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/index_nav.css">
+    <link rel="stylesheet" href="../css/header_nav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="Untitled-1.js?1655284599574"></script>
+    <script src="./index.js"></script>
+    <script>
+        window.addEventListener('resize', function () {
+            const canvas = document.getElementById('canvas')
+            const draggableArea = document.getElementById('draggableArea')
+            const w = window.innerWidth;
+            const h = draggableArea.clientHeight;
+            const canvasW = canvas.clientWidth;
+            const canvasH = canvas.clientHeight;
+            // console.log(canvasW,canvasH, w, h,-(Math.abs(h - canvasH)));
+            $("#draggable").draggable({ containment: [w - canvasW, -(Math.abs(h - canvasH)), 0, 0] });
+        });
+
+        $(function () {
+            // const canvasWidth = document.getElementById('animation_container');
+            const canvas = document.getElementById('canvas')
+            const draggableArea = document.getElementById('draggableArea')
+            const w = window.innerWidth;
+            const h = draggableArea.clientHeight;
+            const canvasW = canvas.clientWidth;
+            const canvasH = canvas.clientHeight;
+            // console.log(canvasW,canvasH, w, h,-(Math.abs(h - canvasH)));
+            $("#draggable").draggable({ containment: [w - canvasW, -(Math.abs(h - canvasH)), 0, 0] });
+            const draggableAreaB = document.getElementById('body');
+        });
+        window.addEventListener('wheel', (e) => {
+            e.preventDefault()
+        }, { passive: false })
+    </script>
+    <script src="./drag-js/jquery.ui.touch-punch.js"></script>
+    <script src="./drag-js/jquery.ui.touch-punch.min.js"></script>
+    <style>
+        * {
+            scroll-snap-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #canvas {
+            margin: 0px;
+            width: 2000px;
+        }
+
+        #draggableArea {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #draggable {
+            border: 0px;
+            /* width: 100%; */
+        }
+
+        .form-popup-bg {
+            position: absolute;
+            display: none;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(105, 102, 102, 0.437);
+        }
+
+        .form-popup {
+            width: 400px;
+            height: 500px;
+            background-color: pink;
+            border-radius: 8px;
+            position: absolute;
+            z-index: 3;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .form-text {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .close {
+            font-size: 30px;
+            font-family: 'Trebuchet MS';
+            display: flex;
+            justify-content: end;
+            padding: 5px 20px;
+            color: darkslateblue;
+            cursor: pointer;
+        }
+        .the_video{
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body onload="init();" style="margin:0px;" id="body">
+
+    <div id="draggableArea">
+        <header style="width: 100%; position:fixed; top:0; z-index:1;">
+            <div>
+                <div class="ham_all">
+                    <input id="nav_toggle" type="checkbox">
+                    <label for="nav_toggle" class="ham">
+                        <div class="ham_origin">
+                            <div class="ham_bar ham_bar_top"></div>
+                            <div class="ham_bar ham_bar_middle"></div>
+                            <div class="ham_bar ham_bar_bottom"></div>
+                        </div>
+                    </label>
+                    <div class="menu menu_bg"></div>
+                    <nav class="menu">
+                        <div class="menu_logo">
+                            <a href="./index.html" class="menu_logo_a">
+                                <img src="./images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <ul class="menu_list">
+                            <li class="menu_item">
+                                <a class="menu_link" href="#">機場簡介</a>
+                            </li>
+                            <li class="menu_item">
+                                <a class="menu_link" href="#">未來展望</a>
+                            </li>
+                            <li class="menu_item">
+                                <a class="menu_link" href="#">活動專區</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="draggable" class="ui-widget-content">
+            <div class="content">
+                <div id="animation_container"
+                    style="background-color:rgba(255, 255, 255, 1.00); width:1024px; height:768px">
+                    <canvas id="canvas" width="1024" height="768"
+                        style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="form-popup-bg" id="myFormbg"></div>
+        <div class="form-popup" id="myForm">
+            <div class="close" id="close">X</div>
+            <div class="form-text">
+                太陽（又稱日），是太陽系中心的恆星，它幾乎是熱電漿與磁場交織著的一個理想球體。它的直徑大約是1,392,000（1.392×106）公里，相當於地球直徑的109.3倍；質量大約是2×1030千克（地球的333,000倍），約佔太陽系總質量的99.86%。從化學組成來看，太陽質量的大約四分之三是氫（~73%），剩下的幾乎都是氦（~25%），包括氧、碳、氖、鐵和其他的重元素質量少於2%。
+            </div>
+            <div class="the_video">
+                <video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop> 
+                    <source src="./images/file.mp4" type="video/mp4">
+                    出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。
+                  </video>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
