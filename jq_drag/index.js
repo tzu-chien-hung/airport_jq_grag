@@ -48,7 +48,7 @@ function handleComplete(evt,comp) {
 		document.getElementById("myFormbg").style.display = "none";
         document.getElementById("myForm").style.display = "none";
     })
-
+	var 
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		createjs.Ticker.framerate = lib.properties.fps;
