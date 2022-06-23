@@ -9,8 +9,7 @@
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="./css/index_nav.css">
-    <link rel="stylesheet" href="../css/header_nav.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="Untitled-1.js?1655284599574"></script>
@@ -45,77 +44,10 @@
     </script>
     <script src="./drag-js/jquery.ui.touch-punch.js"></script>
     <script src="./drag-js/jquery.ui.touch-punch.min.js"></script>
-    <style>
-        * {
-            scroll-snap-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        #canvas {
-            margin: 0px;
-            width: 2000px;
-        }
-
-        #draggableArea {
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        #draggable {
-            border: 0px;
-            /* width: 100%; */
-        }
-
-        .form-popup-bg {
-            position: absolute;
-            display: none;
-            z-index: 12;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(105, 102, 102, 0.437);
-        }
-
-        .form-popup {
-            width: 400px;
-            height: 500px;
-            background-color: pink;
-            border-radius: 8px;
-            position: absolute;
-            z-index: 13;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: none;
-        }
-
-        .form-text {
-            font-size: 18px;
-            padding: 10px;
-        }
-
-        .close {
-            font-size: 30px;
-            font-family: 'Trebuchet MS';
-            display: flex;
-            justify-content: end;
-            padding: 5px 20px;
-            color: darkslateblue;
-            cursor: pointer;
-        }
-
-        .the_video {
-            text-align: center;
-        }
-    </style>
 </head>
 
 
 <body onload="init();" style="margin:0px;" id="body">
-
     <div id="draggableArea">
         <header style="width: 100%; position:fixed; top:0; z-index:100;">
             <div>
@@ -151,9 +83,10 @@
             </div>
         </header>
         <div id="draggable" class="ui-widget-content">
-            <div id="pop" style="cursor: pointer; position: absolute; top: 100px; left: 100px; width:100px; height: 100px; z-index: 10;">
+            <div id="pop" class="pop_icon" style="cursor: pointer; position: absolute; top: 100px; left: 100px; width:100px; height: 100px; z-index: 10;">
                 <img style="width: 100%;" src="./images/TryTrySee.png" alt="">
             </div>
+
             <div>
                 <div class="form-popup-bg" id="myFormbg"></div>
                 <div class="form-popup" id="myForm">

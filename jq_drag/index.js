@@ -40,6 +40,7 @@ function handleComplete(evt,comp) {
     // })
 	var pop = document.getElementById("pop");
 	pop.addEventListener("click",()=>{
+		
 		document.getElementById("myFormbg").style.display = "block";
         document.getElementById("myForm").style.display = "block";
     })
