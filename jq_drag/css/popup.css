@@ -18,20 +18,6 @@
     background: #458514;
 }
 
-.popup_nav_form_text::-webkit-scrollbar {
-    display: none;
-    /* Chrome Safari */
-}
-
-.popup_nav_form_text {
-    scrollbar-width: none;
-    /* firefox */
-    -ms-overflow-style: none;
-    /* IE 10+ */
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 /* ================      pop_icon    ================ */
 .pop_icon_all {
     text-align: center;
@@ -66,7 +52,7 @@
     border-radius: 0px 0px 8px 8px;
 }
 
-.pop_icon_arrow:hover {
+.pop_icon_all:hover .pop_icon_arrow {
     transform: translateY(10px);
     transition: 0.4s;
 }
@@ -76,38 +62,43 @@
     transition-duration: .3s;
 }
 
-.pop1  .pop_icon_content{
+.pop1 .pop_icon_content {
     border: 3px solid #01BA63;
 }
-.pop1  .pop_icon_title{
+
+.pop1 .pop_icon_title {
     background: #01BA63;
 }
 
-.pop2  .pop_icon_content{
+.pop2 .pop_icon_content {
     border: 3px solid #0185CC;
 }
-.pop2  .pop_icon_title{
+
+.pop2 .pop_icon_title {
     background: #0185CC;
 }
 
-.pop3 .pop_icon_content{
+.pop3 .pop_icon_content {
     border: 3px solid #002F73;
 }
-.pop3  .pop_icon_title{
+
+.pop3 .pop_icon_title {
     background: #002F73;
 }
 
-.pop4  .pop_icon_content{
+.pop4 .pop_icon_content {
     border: 3px solid #FF2C79;
 }
-.pop4 .pop_icon_title{
+
+.pop4 .pop_icon_title {
     background: #FF2C79;
 }
 
-.pop5  .pop_icon_content{
+.pop5 .pop_icon_content {
     border: 3px solid #F2913E;
 }
-.pop5  .pop_icon_title{
+
+.pop5 .pop_icon_title {
     background: #F2913E;
 }
 
@@ -116,26 +107,32 @@
     top: 100px;
     left: 100px;
 }
+
 #pop2 {
     top: 250px;
     left: 250px;
 }
+
 #pop3 {
     top: 400px;
     left: 400px;
 }
+
 #pop4 {
     top: 200px;
     left: 600px;
 }
+
 #pop5 {
     top: 400px;
     left: 800px;
 }
+
 #pop6 {
     top: 800px;
     left: 1000px;
 }
+
 #pop7 {
     top: 700px;
     left: 200px;
@@ -234,6 +231,26 @@
     height: 400px;
 }
 
+.popup_nav_img {
+    width: 450px;
+    height: 231.19px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.popup_nav_img2{
+    width: 450px;
+    height: 311.25px;
+}
+.popup_nav_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.popup_nav_word{
+    padding: 20px 0px;
+    line-height: 35px;
+}
 .close_nav {
     width: 320px;
     height: 61px;
