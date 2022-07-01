@@ -67,10 +67,32 @@ function handleComplete(evt,comp) {
 		popText.innerHTML ='<div class="popup_form_text">太陽（又稱日），是太陽系中心的恆星，它幾乎是熱電漿與磁場交織著的一個理想球體。它的直徑大約是1,392,000（1.392×106）公里，相當於地球直徑的109.3倍；質量大約是2×1030千克（地球的333,000倍），約佔太陽系總質量的99.86%。從化學組成來看，太陽質量的大約四分之三是氫（~73%），剩下的幾乎都是氦（~25%），包括氧、碳、氖、鐵和其他的重元素質量少於2%。</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';
     });
     var close = document.getElementById("close");
-    close.addEventListener("click",()=>{
+	close.addEventListener("click",()=>{
 		document.getElementById("popupBg").style.display = "none";
         document.getElementById("popupContent").style.display = "none";
     });
+	var nav_introduce = document.getElementById("nav_introduce");
+	var nav_outlook = document.getElementById("nav_outlook");
+	var popNavAll = document.querySelectorAll(".nav_title_txt");
+	var popNavText = document.getElementById("popText");
+	var closeNav = document.getElementById("closeNav");
+	popNavAll.forEach((el)=>{
+		el.addEventListener("click",()=>{
+			document.getElementById("popupNavBg").style.display = "block";
+			document.getElementById("popupNavContent").style.display = "block";
+		})
+	});
+	nav_introduce.addEventListener("click",()=>{
+		popNavText.innerHTML ='';
+    });
+	nav_outlook.addEventListener("click",()=>{
+		popNavText.innerHTML ='';
+    });
+    closeNav.addEventListener("click",()=>{
+		document.getElementById("popupNavBg").style.display = "none";
+		document.getElementById("popupNavContent").style.display = "none";
+    });
+
 	var 
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
