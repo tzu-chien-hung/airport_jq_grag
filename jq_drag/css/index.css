@@ -1,4 +1,5 @@
 @import "./header.css";
+@import "./popup.css";
 
 * {
     scroll-snap-type: none;
@@ -32,83 +33,5 @@ a {
     /* width: 100%; */
 }
 
-.pop_icon {
-    cursor: pointer;
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    z-index: 10;
-}
 
-.pop_icon:hover {
-    transform: translateY(-20px);
-    transition-duration: .3s;
-}
 
-.pop1 {
-    top: 100px;
-    left: 100px;
-}
-
-.pop2 {
-    top: 250px;
-    left: 250px;
-}
-
-.pop3 {
-    top: 400px;
-    left: 400px;
-}
-
-.pop4 {
-    top: 400px;
-    left: 600px;
-}
-
-.pop5 {
-    top: 400px;
-    left: 800px;
-}
-
-.popup_bg {
-    position: absolute;
-    display: none;
-    z-index: 12;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(105, 102, 102, 0.437);
-}
-
-.popup_content {
-    width: 400px;
-    height: 500px;
-    background-color: pink;
-    border-radius: 8px;
-    position: absolute;
-    z-index: 13;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
-.form-text {
-    font-size: 18px;
-    padding: 20px;
-}
-
-.close {
-    font-size: 30px;
-    font-family: 'Trebuchet MS';
-    display: flex;
-    justify-content: end;
-    padding: 5px 20px;
-    color: darkslateblue;
-    cursor: pointer;
-}
-
-.the_video {
-    text-align: center;
-}

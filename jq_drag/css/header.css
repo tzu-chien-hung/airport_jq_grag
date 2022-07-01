@@ -60,7 +60,9 @@ header {
 .nav_title_end {
   margin-right: 0px;
 }
-
+.nav_title_txt{
+  position: relative;
+}
 .nav_title .nav_title_txt:hover {
   color: #458514;
 }
