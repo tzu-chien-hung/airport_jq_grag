@@ -43,7 +43,7 @@ function handleComplete(evt,comp) {
 	var pop3 = document.getElementById("pop3");
 	var pop4 = document.getElementById("pop4");
 	var pop5 = document.getElementById("pop5");
-	var popAll = document.querySelectorAll(".pop_icon");
+	var popAll = document.querySelectorAll(".pop_icon_all");
 	var popText = document.getElementById("popText");
 	popAll.forEach((el)=>{
 		el.addEventListener("click",()=>{

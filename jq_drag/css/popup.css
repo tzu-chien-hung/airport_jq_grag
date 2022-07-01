@@ -17,22 +17,58 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #458514;
 }
+
 .popup_nav_form_text::-webkit-scrollbar {
-    display: none; /* Chrome Safari */
-  }
-  
-  .popup_nav_form_text {
-    scrollbar-width: none; /* firefox */
-    -ms-overflow-style: none; /* IE 10+ */
+    display: none;
+    /* Chrome Safari */
+}
+
+.popup_nav_form_text {
+    scrollbar-width: none;
+    /* firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
     overflow-x: hidden;
     overflow-y: auto;
-  }
-.pop_icon {
+}
+
+/* ================      pop_icon    ================ */
+.pop_icon_all {
+    text-align: center;
+    width: 288px;
     cursor: pointer;
     position: absolute;
-    width: 80px;
-    height: 80px;
     z-index: 10;
+}
+
+.pop_icon_content {
+    text-align: center;
+    width: 288px;
+    /* border: 3px solid #002F73; */
+    border-radius: 10px;
+}
+
+.pop_icon_title {
+    height: 30px;
+    /* background: #002F73; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.pop_icon_txt {
+    height: 45px;
+    line-height: 45px;
+    background: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.pop_icon_arrow:hover {
+    transform: translateY(10px);
+    transition: 0.4s;
 }
 
 .pop_icon:hover {
@@ -40,31 +76,72 @@
     transition-duration: .3s;
 }
 
-.pop1 {
+.pop1  .pop_icon_content{
+    border: 3px solid #01BA63;
+}
+.pop1  .pop_icon_title{
+    background: #01BA63;
+}
+
+.pop2  .pop_icon_content{
+    border: 3px solid #0185CC;
+}
+.pop2  .pop_icon_title{
+    background: #0185CC;
+}
+
+.pop3 .pop_icon_content{
+    border: 3px solid #002F73;
+}
+.pop3  .pop_icon_title{
+    background: #002F73;
+}
+
+.pop4  .pop_icon_content{
+    border: 3px solid #FF2C79;
+}
+.pop4 .pop_icon_title{
+    background: #FF2C79;
+}
+
+.pop5  .pop_icon_content{
+    border: 3px solid #F2913E;
+}
+.pop5  .pop_icon_title{
+    background: #F2913E;
+}
+
+
+#pop1 {
     top: 100px;
     left: 100px;
 }
-
-.pop2 {
+#pop2 {
     top: 250px;
     left: 250px;
 }
-
-.pop3 {
+#pop3 {
     top: 400px;
     left: 400px;
 }
-
-.pop4 {
-    top: 400px;
+#pop4 {
+    top: 200px;
     left: 600px;
 }
-
-.pop5 {
+#pop5 {
     top: 400px;
     left: 800px;
 }
+#pop6 {
+    top: 800px;
+    left: 1000px;
+}
+#pop7 {
+    top: 700px;
+    left: 200px;
+}
 
+/* ================      pop_icon end   ================ */
 .popup_bg {
     position: absolute;
     display: none;
