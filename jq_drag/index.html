@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani2</title>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="Untitled-1.js?1655284599574"></script>
+    <script src="./index.js"></script>
+    <script>
+        window.addEventListener('resize', function () {
+            const canvas = document.getElementById('canvas')
+            const draggableArea = document.getElementById('draggableArea')
+            const w = window.innerWidth;
+            const h = draggableArea.clientHeight;
+            const canvasW = canvas.clientWidth;
+            const canvasH = canvas.clientHeight;
+            // console.log(canvasW,canvasH, w, h,-(Math.abs(h - canvasH)));
+            $("#draggable").draggable({ containment: [w - canvasW, -(Math.abs(h - canvasH)), 0, 0] });
+        });
+
+        $(function () {
+            // const canvasWidth = document.getElementById('animation_container');
+            const canvas = document.getElementById('canvas')
+            const draggableArea = document.getElementById('draggableArea')
+            const w = window.innerWidth;
+            const h = draggableArea.clientHeight;
+            const canvasW = canvas.clientWidth;
+            const canvasH = canvas.clientHeight;
+            // console.log(canvasW,canvasH, w, h,-(Math.abs(h - canvasH)));
+            $("#draggable").draggable({ containment: [w - canvasW, -(Math.abs(h - canvasH)), 0, 0] });
+            const draggableAreaB = document.getElementById('body');
+        });
+        window.addEventListener('wheel', (e) => {
+            e.preventDefault()
+        }, { passive: false })
+    </script>
+    <script src="./drag-js/jquery.ui.touch-punch.js"></script>
+    <script src="./drag-js/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+
+<body onload="init();" id="body">
+    <div id="draggableArea">
+        <header>
+            <nav class="nav_top">
+                <div class="nav_top_all">
+                    <div class="nav_top_logo">
+                        <a href="index.html"><img src="./images/logo.png"></a>
+                    </div>
+                    <input id="nav-toggle" type="checkbox">
+                    <label for="nav-toggle" class="ham">
+                        <div class="ham-origin">
+                            <div class="ham-bar ham-bar--top"></div>
+                            <div class="ham-bar ham-bar--middle"></div>
+                            <div class="ham-bar ham-bar--bottom"></div>
+                        </div>
+                    </label>
+                    <div class="nav_top_title_all">
+                        <div class="nav_top_title">
+                            <div class="nav_top_title1 nav_top_title_txt">機場簡介</div>
+                        </div>
+                        <div class="nav_top_title">
+                            <div class="nav_top_title_txt">未來展望</div>
+                        </div>
+                        <div class="nav_top_title nav_top_title_end">
+                            <a class="nav_top_title_txt">活動專區</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <div id="draggable" class="ui-widget-content">
+            <div class="content">
+                <div id="animation_container"
+                    style="background-color:rgba(255, 255, 255, 1.00); width:1024px; height:768px">
+                    <canvas id="canvas" width="1024" height="768"
+                        style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+                </div>
+            </div>
+            <div id="pop1" class="pop_icon pop1">
+                <img style="width: 100%;" src="./images/TryTrySee.png" alt="">
+            </div>
+            <div id="pop2" class="pop_icon pop2">
+                <img style="width: 100%;" src="./images/TryTrySee.png" alt="">
+            </div>
+            <div id="pop3" class="pop_icon pop3">
+                <img style="width: 100%;" src="./images/TryTrySee.png" alt="">
+            </div>
+            <div id="pop4" class="pop_icon pop4">
+                <img style="width: 100%;" src="./images/TryTrySee.png" alt="">
+            </div>
+            <div id="pop5" class="pop_icon pop5">
+                <img style="width: 100%;" src="./images/TryTrySee.png" alt="">
+            </div>
+            <div>
+                <div class="popup_bg" id="popupBg"></div>
+                <div class="popup_content" id="popupContent">
+                    <div>
+                        <div class="popup_title" id=""></div>
+                        <div class="close" id="close">X</div>
+                    </div>
+                    <div id="popText"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
