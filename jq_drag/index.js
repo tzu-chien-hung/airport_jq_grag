@@ -52,7 +52,7 @@ function handleComplete(evt,comp) {
 		})
 	});
 	pop1.addEventListener("click",()=>{
-		popText.innerHTML ='<div class="popup_form_text">[提高用電效率]兼顧節能與旅客舒適度，機場採精實用電策略。汰換高耗電量舊設備、改用高效率新機種	<br>[LED照明]航廈內外全面換裝新式LED燈泡，節電率提高74% <br>[空調設備更新]中央空調大型泵浦與變頻器更新，節電率提高40%</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';
+		popText.innerHTML ='';
     });
 	pop2.addEventListener("click",()=>{
 		popText.innerHTML ='<div class="popup_form_text">[智慧省電模式]電扶梯、空調設施，依據尖峰離峰時段調整運轉<br>[電扶梯]沒有旅客使用時，自動緩速或休眠，節電率31%<br>[中央空調]室外溫度低/夜間/旅客量少情況下，啟動省電模式，關閉部分主機，節電率25.7%<br>[太陽能設備]</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';

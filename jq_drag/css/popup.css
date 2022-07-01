@@ -40,21 +40,21 @@
 .popup_bg {
     position: absolute;
     display: none;
-    z-index: 12;
+    z-index: 23;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(105, 102, 102, 0.437);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup_content {
-    width: 400px;
-    height: 500px;
-    background-color: pink;
-    border-radius: 8px;
+    width: 640px;
+    height: 620px;
+    background: #FFFFFF;
+    border-radius: 15px;
     position: absolute;
-    z-index: 13;
+    z-index: 24;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

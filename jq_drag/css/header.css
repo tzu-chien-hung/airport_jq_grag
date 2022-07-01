@@ -60,9 +60,11 @@ header {
 .nav_title_end {
   margin-right: 0px;
 }
-.nav_title_txt{
+
+.nav_title_txt {
   position: relative;
 }
+
 .nav_title .nav_title_txt:hover {
   color: #458514;
 }
@@ -96,7 +98,9 @@ header {
     margin: 0 60px;
   }
 
-  .nav_logo {}
+  .nav_logo a {
+    height: 75px;
+  }
 
   .nav_logo img {}
 
@@ -152,10 +156,12 @@ header {
     height: 65px;
     line-height: 65px;
     background-color: #fff;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, .2);
   }
 
   .nav_logo a {
     width: 180px;
+    height: 65px;
     margin-left: 5%;
   }
 
@@ -176,8 +182,10 @@ header {
     position: relative;
     z-index: 100;
     background-color: #fff;
-    border-left: 1px solid #D1DEE1
+    border-left: 1px solid #D1DEE1;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, .2);
   }
+
 
   .ham-origin {
     position: absolute;
@@ -232,8 +240,6 @@ header {
     display: block;
     height: 197px;
     width: 100%;
-    border: 1px solid #bdbdbd;
-    border-radius: 0px 0px 10px 10px;
     background-color: #fff;
     position: fixed;
     z-index: 0;

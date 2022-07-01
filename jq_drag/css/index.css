@@ -2,7 +2,7 @@
 @import "./popup.css";
 
 * {
-    scroll-snap-type: none;
+    /* scroll-snap-type: none; */
     box-sizing: border-box;
     list-style: none;
     margin: 0;
@@ -30,6 +30,7 @@ a {
 
 #draggable {
     border: 0px;
+    top: -85px;
     /* width: 100%; */
 }
 
