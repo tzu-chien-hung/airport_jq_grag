@@ -226,7 +226,7 @@
     font-size: 18px;
     padding: 20px;
     margin: 15px auto;
-    overflow: scroll;
+    overflow-y: scroll;
     width: 500px;
     height: 400px;
 }

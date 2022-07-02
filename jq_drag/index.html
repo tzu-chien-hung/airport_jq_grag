@@ -37,10 +37,17 @@
             // console.log(canvasW,canvasH, w, h,-(Math.abs(h - canvasH)));
             $("#draggable").draggable({ containment: [w - canvasW, -(Math.abs(h - canvasH)), 0, 0] });
             const draggableAreaB = document.getElementById('body');
+            const pop = document.querySelectorAll('.popup_form_text')
+            pop.forEach((element) => {
+                element.addEventListener('wheel', (e) => {
+                    element.scrollTop += e.deltaY;
+                })
+            });
         });
+
         window.addEventListener('wheel', (e) => {
             e.preventDefault()
-        }, { passive: false })
+        }, { passive: false });
     </script>
     <script src="./drag-js/jquery.ui.touch-punch.js"></script>
     <script src="./drag-js/jquery.ui.touch-punch.min.js"></script>
@@ -184,7 +191,7 @@
                     <div class="popup_title" id="">桃園綠機場網站介紹</div>
                     <div class="close" id="close">X</div>
                     <div class="popup_form_text"
-                        style="margin: 15px auto; overflow: scroll; width: 500px; height: 400px;">
+                        style="margin: 15px auto; overflow-y: scroll; width: 500px; height: 400px;">
                         <div style="width: 300px;height: 274px;"><img style="width: 100%;" src="../img/t3-plan1.jpeg"
                                 alt=""></div>
                         <div>
@@ -235,14 +242,28 @@
                         </div>
                         <div class="popup_nav_word_all">
                             <div class="popup_nav_word">
-                                桃園國際機場啟用40多年，在服務與設備升級的同時，更兼顧環保策略，實踐永續經營理念，推動機場節能減碳，預定在2050年達到淨零排放的目標。
+                                近期四大目標
+                                <div style="margin-left: 20px;">
+                                    -水足跡盤查
+                                    <br>
+                                    -空、陸側充電樁由現有 54 座
+                                    增設至 180 座
+                                    <br>
+                                    -第三航廈建置太陽能
+                                    發電機組
+                                    <br>
+                                    -評估購置再生能源或
+                                    設置儲能設備可行性
+                                </div>
                             </div>
                             <div class="popup_nav_word">
-                                機場節能減碳在航廈設施、機坪作業車輛、水資源管理和焚化爐升級皆有具體作為。減碳成果持續獲獎，榮獲ISO 14064-1溫室氣體盤查、ISO 50001能源管理系統、ISO
-                                14001環境管理系統，並連續4年獲得ACI綠色機場肯定。
+                                2025年前，取得機場
+                                碳認證（ACA）等級四
+                                之認證
                             </div>
                             <div class="popup_nav_word">
-                                讓我們一起認識桃園機場綠色作為吧!
+                                在2050 年達到淨零排放的目標
+
                             </div>
                         </div>
                     </div>
