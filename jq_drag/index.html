@@ -13,7 +13,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="Untitled-1.js?1655284599574"></script>
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/youtube.js"></script>
     <script>
         window.addEventListener('resize', function () {
             const canvas = document.getElementById('canvas')
@@ -190,46 +191,44 @@
                 </div>
             </div>
         </div>
-        <div class="popup_all">
-            <div class="popup_bg" id="popupBg"></div>
-            <div class="popup_content" id="popupContent">
-                <div>
-                    <div class="popup_title" id="">桃園綠機場網站介紹</div>
-                    <div class="close" id="close">X</div>
-                    <div class="popup_form_text"
-                        style="margin: 15px auto; overflow-y: scroll; width: 500px; height: 400px;">
-                        <div style="width: 300px;height: 274px;"><img style="width: 100%;" src="../img/t3-plan1.jpeg"
-                                alt=""></div>
-                        <div>
-                            [提高用電效率]兼顧節能與旅客舒適度，機場採精實用電策略。汰換高耗電量舊設備、改用高效率新機種
-                            <br>[LED照明]航廈內外全面換裝新式LED燈泡，節電率提高74%
-                            <br>[空調設備更新]中央空調大型泵浦與變頻器更新，節電率提高40%
-                            桃園國際機場啟用40多年，在服務與設備升級的同時，更兼顧環保策略，實踐永續經營理念，推動機場節能減碳，預定在2050年達到淨零排放的目標。
-                            <br>
-                            桃園機場在航廈設施、機坪作業車輛、水資源管理和焚化爐升級皆有具體節能減碳作為。減碳成果持續獲獎，榮獲ISO 14064-1溫室氣體盤查、ISO 50001能源管理系統、ISO
-                            14001環境管理系統，並連續4年獲得ACI綠色機場肯定。
-                            <br>
-                            讓我們一起認識桃園機場綠色作為吧!
-                        </div>
-                    </div>
-                    <div class="the_video"><img></div>
-
-                </div>
-
-                <div id="popText"></div>
-            </div>
-        </div>
         <div class="popup_nav_all">
             <div class="popup_bg" id="popupNavBg"></div>
             <div class="popup_nav_content" id="popupNavContent">
                 <div>
                     <div class="popup_nav_title" id="">桃園綠機場網頁介紹</div>
-                    <div id="popNavText"></div>
+                    <div class="popup_nav_form_text" id="popNavText">
+                    </div>
                     <div class="close_nav" id="closeNav"> 關閉</div>
                 </div>
+            </div>
+        </div>
+        <div class="popup_all">
+            <div class="popup_bg" id="popupBg"></div>
+            <div class="popup_content" id="popupContent">
+                <div>
+                    <div class="popup_title popup_title_big" id="popupTitleBig"></div>
+                    <div class="popup_title popup_title_small" id="popupTitleSmall"></div>
+                    <div class="close" id="close"><img src="./img/PC/popup_button_PC.png" alt=""></div>
+                    <div class="popup_form_text" id="popText">
+                        <div id="player">
+                            <iframe width="625" height="350" src="https://www.youtube.com/embed/vpAyy8YvccM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="">
+                            <div class="popup_word">• 【提高用電效率】兼顧節能與旅客舒適度，機場採精實用電策略。
+                                <br> &nbsp; &nbsp; 汰換高耗電量舊設備、改用高效率新機種。</div>
+                            <div class="popup_word popup_word_nd">-【LED照明】航廈內外全面換裝新式LED燈泡，節電率提高74%</div>
+                            <div class="popup_word popup_word_nd">-【空調設備更新】中央空調大型泵浦與變頻器更新，節電率提高40%</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </body>
 
 </html>
+

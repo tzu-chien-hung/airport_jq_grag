@@ -156,20 +156,26 @@
 }
 
 .popup_title {
-    border-bottom: 1px solid #E0E2E6;
-    padding: 30px 0 20px;
-    width: 480px;
-    margin: 0 auto;
-    font-weight: 600;
+    width: 625px;
     font-size: 26px;
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.06em;
 }
-
+.popup_title_big{
+    margin: 25px auto 10px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.popup_title_small{
+    margin: 0 auto;
+    font-size: 24px;
+padding-bottom: 20px;
+    border-bottom: 1px solid #E0E2E6;
+}
 .popup_content {
-    width: 640px;
-    height: 620px;
+    width: 685px;
+    height: 680px;
     background: #FFFFFF;
     border-radius: 15px;
     position: absolute;
@@ -182,17 +188,28 @@
 
 .popup_form_text {
     font-size: 18px;
-    padding: 20px;
+    margin: 15px auto 45px;
+    padding: 0px 10px;
+    overflow-y: scroll;
+    width: 625px;
+    height: 500px;
 }
 
 .close {
-    font-size: 30px;
-    font-family: 'Trebuchet MS';
+    width: 55px;
+    height: 55px;
     position: absolute;
-    right: 30px;
-    top: 30px;
-    color: darkslateblue;
+    right: 20px;
+    top: 20px;
     cursor: pointer;
+    transition: all .6s ease-out;
+}
+.close img{
+    width: 100%;
+}
+
+.close:hover {
+    transform:scale(1.2,1.2);
 }
 
 .the_video {
@@ -226,7 +243,9 @@
     text-align: center;
     letter-spacing: 0.06em;
 }
+.popup_nav_text{
 
+}
 .popup_nav_form_text {
     font-size: 18px;
     padding: 20px;
@@ -243,17 +262,28 @@
     border-radius: 10px;
     overflow: hidden;
 }
-.popup_nav_img2{
+
+.popup_nav_img2 {
     width: 450px;
     height: 311.25px;
 }
-.popup_nav_img img{
+
+.popup_nav_img img {
     width: 100%;
     height: 100%;
 }
 
-.popup_nav_word{
+.popup_nav_word {
     padding: 35px 0px 0px;
+    line-height: 35px;
+}
+.popup_word {
+    padding: 35px 0px 20px;
+    line-height: 35px;
+}
+.popup_word_nd{
+    margin-left: 20px;
+    padding: 5px 0px 0px;
     line-height: 35px;
 }
 .close_nav {
