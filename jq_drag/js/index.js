@@ -56,28 +56,40 @@ function handleComplete(evt, comp) {
 		})
 	});
 	pop1.addEventListener("click", () => {
-		popText.innerHTML = '<div id="player"><iframe width="625" height="350" src="https://www.youtube.com/embed/vpAyy8YvccM"title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe></div><div class=""><div class="popup_word">• 【提高用電效率】兼顧節能與旅客舒適度，機場採精實用電策略。<br> &nbsp; &nbsp; 汰換高耗電量舊設備、改用高效率新機種。</div><div class="popup_word popup_word_nd">-【LED照明】航廈內外全面換裝新式LED燈泡，節電率提高74%</div><div class="popup_word popup_word_nd">-【空調設備更新】中央空調大型泵浦與變頻器更新，節電率提高40%</div></div>';
+		popText.innerHTML = '<div id="player"><iframe width="600" height="336" src="https://www.youtube.com/embed/vpAyy8YvccM"title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe></div><div class=""><div class="popup_word_title"><div class="popup_word_title">【提高用電效率】</div><div class="popup_word_content">兼顧節能與旅客舒適度，機場採精實用電策略。汰換高耗電量舊設備、改用高效率新機種。</div><div class="popup_word_nd"><div class="popup_word_title">-【LED照明】</div><div class="popup_word_content_nd">航廈內外全面換裝新式LED燈泡，節電率提高74%</div><div class="popup_word_title">-【空調設備更新】</div><div class="popup_word_content_nd">中央空調大型泵浦與變頻器更新，節電率提高40%</div></div></div>';
 		popupTitleBig.innerText = '第一航廈';
 		popupTitleSmall.innerText = 'LED 照明、空調設備更新';
 	});
-	// pop2.addEventListener("click",()=>{
-	// 	popText.innerHTML ='<div class="">[智慧省電模式]電扶梯、空調設施，依據尖峰離峰時段調整運轉<br>[電扶梯]沒有旅客使用時，自動緩速或休眠，節電率31%<br>[中央空調]室外溫度低/夜間/旅客量少情況下，啟動省電模式，關閉部分主機，節電率25.7%<br>[太陽能設備]</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';
-	// });
-	// pop3.addEventListener("click",()=>{
-	// 	popText.innerHTML ='<div class="">太陽（又稱日），是太陽系中心的恆星，它幾乎是熱電漿與磁場交織著的一個理想球體。它的直徑大約是1,392,000（1.392×106）公里，相當於地球直徑的109.3倍；質量大約是2×1030千克（地球的333,000倍），約佔太陽系總質量的99.86%。從化學組成來看，太陽質量的大約四分之三是氫（~73%），剩下的幾乎都是氦（~25%），包括氧、碳、氖、鐵和其他的重元素質量少於2%。</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';
-	// });
-	// pop4.addEventListener("click",()=>{
-	// 	popText.innerHTML ='<div class="">太陽（又稱日），是太陽系中心的恆星，它幾乎是熱電漿與磁場交織著的一個理想球體。它的直徑大約是1,392,000（1.392×106）公里，相當於地球直徑的109.3倍；質量大約是2×1030千克（地球的333,000倍），約佔太陽系總質量的99.86%。從化學組成來看，太陽質量的大約四分之三是氫（~73%），剩下的幾乎都是氦（~25%），包括氧、碳、氖、鐵和其他的重元素質量少於2%。</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';
-	// });
-	// pop5.addEventListener("click",()=>{
-	// 	popText.innerHTML ='<div class="">太陽（又稱日），是太陽系中心的恆星，它幾乎是熱電漿與磁場交織著的一個理想球體。它的直徑大約是1,392,000（1.392×106）公里，相當於地球直徑的109.3倍；質量大約是2×1030千克（地球的333,000倍），約佔太陽系總質量的99.86%。從化學組成來看，太陽質量的大約四分之三是氫（~73%），剩下的幾乎都是氦（~25%），包括氧、碳、氖、鐵和其他的重元素質量少於2%。</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';
-	// });
-	// pop6.addEventListener("click",()=>{
-	// 	popText.innerHTML ='<div class="">太陽（又稱日），是太陽系中心的恆星，它幾乎是熱電漿與磁場交織著的一個理想球體。它的直徑大約是1,392,000（1.392×106）公里，相當於地球直徑的109.3倍；質量大約是2×1030千克（地球的333,000倍），約佔太陽系總質量的99.86%。從化學組成來看，太陽質量的大約四分之三是氫（~73%），剩下的幾乎都是氦（~25%），包括氧、碳、氖、鐵和其他的重元素質量少於2%。</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';
-	// });
-	// pop7.addEventListener("click",()=>{
-	// 	popText.innerHTML ='<div class="">太陽（又稱日），是太陽系中心的恆星，它幾乎是熱電漿與磁場交織著的一個理想球體。它的直徑大約是1,392,000（1.392×106）公里，相當於地球直徑的109.3倍；質量大約是2×1030千克（地球的333,000倍），約佔太陽系總質量的99.86%。從化學組成來看，太陽質量的大約四分之三是氫（~73%），剩下的幾乎都是氦（~25%），包括氧、碳、氖、鐵和其他的重元素質量少於2%。</div><div class="the_video"><video width="350" controls autoplay disablePictureInPicture controlsList="nodownload" poster="https://picsum.photos/id/406/500/300" muted loop><source src="./images/file.mp4" type="video/mp4">出現這個訊息，表示您的瀏覽器不支援 HTML5 video 標籤。</video></div>';
-	// });
+	pop2.addEventListener("click", () => {
+		popText.innerHTML = '<div id="player"><iframe width="600" height="336" src="https://www.youtube.com/embed/vpAyy8YvccM"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class=""><div class="popup_word_title">【智慧省電模式】</div><div class="popup_word_content">沒有旅客使用時，自動緩速或休眠，節電率31%</div><div class="popup_word_nd"><div class="popup_word_title">-【電扶梯】</div><div class="popup_word_content_nd">沒有旅客使用時，自動緩速或休眠，節電率31%</div><div class="popup_word_title">-【中央空調】</div><div class="popup_word_content_nd">室外溫度低/夜間/旅客量少情況下，啟動省電模式，關閉部分主機，節電率25.7%</div></div><div class="popup_word_title_nd">【太陽能設備】</div><div class="popup_word_content">第二航廈設置太陽能板、未來完成的第三航廈設置太陽能發電機組，供應部分用電，減少能源消耗</div></div>';
+		popupTitleBig.innerText = '第二航廈';
+		popupTitleSmall.innerText = '手扶梯電更新、中央空調、太陽能發電';
+	});
+	pop3.addEventListener("click", () => {
+		popText.innerHTML = '<div id="player3"><iframe width="600" height="337.5" src="https://www.youtube.com/embed/Yq6EATDaOjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class=""><div class="popup_word_title">興建中的第三航廈，在設計階段就納入了節能減碳的考量。包括：</div><div class=""><div class="popup_word_content">(1) 延伸懸挑的屋頂設計，遮陽避雨且提升舒適度，減少空調耗能。<br>(2) 增加植栽區，提升航廈綠意。<br>(3) 屋頂太陽能光電板，轉換電能龔照明用電使用。<br>(4) 汙水處理廠可過濾回收45%污水成再生水，循環再利用。</div></div></div>';
+		popupTitleBig.innerText = '第三航廈';
+		popupTitleSmall.innerText = '綠建築設計';
+	});
+	pop4.addEventListener("click", () => {
+		popText.innerHTML = '<div id="player"><iframe width="600" height="337.5" src="https://www.youtube.com/embed/Yq6EATDaOjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div><div class="popup_word_content_rd">2020年桃園機場以此項目榮獲綠色機場認證獎項。<br>機場公司推動自來水與污排水設施的智慧化管理。</div><div class="popup_word_content_rd">效率管理，全面換裝省水器材，讓當年度旅客用水量下降1.3%，也同時讓廢水放流水質更淨化，比國家排放標準更低50%。</div><div class="popup_word_content_rd">所產生之廢水經處理後亦回收澆灌機場內超過4,200棵樹木植栽使用。</div></div>';
+		popupTitleBig.innerText = '污水處理廠';
+		popupTitleSmall.innerText = '水資源管理';
+	});
+	pop5.addEventListener("click", () => {
+		popText.innerHTML = '<div id="player5"><iframe width="600" height="337.5" src="https://www.youtube.com/embed/cqK6eip53Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class=""><div class="popup_word_content_rd">升級監測設備、廢氣處理設備，以及雙爐運作，讓焚化爐的廢氣排放標準更透明化，焚燒更有效率、降低汙染量。</div><div class="popup_word_content_rd">讓機場焚化爐符合國家排放標準，更額外再降低90%的排放量，有效減少空污、守護機場周邊環境。</div></div>';
+		popupTitleBig.innerText = '焚化爐';
+		popupTitleSmall.innerText = '焚化爐監測設備升級';
+	});
+	pop6.addEventListener("click", () => {
+		popText.innerHTML = '<div id="player6"><iframe width="600" height="337.5" src="https://www.youtube.com/embed/1jqANvV6-O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class=""><div class="popup_word_content_rd">為了讓停靠的飛機保持電力與空調，運用空橋來傳輸電力與冷氣。取代傳統的柴油引擎電源車及氣源車(傳輸冷氣用)。</div><div class="popup_word_content_rd">每年可減少3萬噸碳排放，等同77座大安森林公園的碳吸附量。</div></div>';
+		popupTitleBig.innerText = '空側';
+		popupTitleSmall.innerText = '橋氣橋電';
+	});
+	pop7.addEventListener("click", () => {
+		popText.innerHTML = '<div id="player7"><iframe width="600" height="337.5" src="https://www.youtube.com/embed/Yq6EATDaOjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><div class=""><div class="popup_word_content_rd">將數量最多、頻繁進出行李處理場的柴油行李拖車，全面改換為電動車。</div><div class="popup_word_content_rd">且設置了43座專用充電樁，並陸續依地勤公司需求增設鍾。</div><div class="popup_word_content_rd">有效減少11%的空氣汙染物排放。</div></div>';
+		popupTitleBig.innerText = '空側';
+		popupTitleSmall.innerText = '空側車輛電動車化';
+	});
 	var close = document.getElementById("close");
 	close.addEventListener("click", () => {
 		document.getElementById("popupBg").style.display = "none";

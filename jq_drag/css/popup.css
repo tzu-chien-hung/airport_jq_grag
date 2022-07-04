@@ -157,22 +157,24 @@
 
 .popup_title {
     width: 625px;
-    font-size: 26px;
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.06em;
 }
-.popup_title_big{
+
+.popup_title_big {
     margin: 25px auto 10px;
     font-weight: 600;
     font-size: 30px;
 }
-.popup_title_small{
+
+.popup_title_small {
     margin: 0 auto;
     font-size: 24px;
-padding-bottom: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #E0E2E6;
 }
+
 .popup_content {
     width: 685px;
     height: 680px;
@@ -204,12 +206,13 @@ padding-bottom: 20px;
     cursor: pointer;
     transition: all .6s ease-out;
 }
-.close img{
+
+.close img {
     width: 100%;
 }
 
 .close:hover {
-    transform:scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 
 .the_video {
@@ -243,9 +246,9 @@ padding-bottom: 20px;
     text-align: center;
     letter-spacing: 0.06em;
 }
-.popup_nav_text{
 
-}
+.popup_nav_text {}
+
 .popup_nav_form_text {
     font-size: 18px;
     padding: 20px;
@@ -277,15 +280,37 @@ padding-bottom: 20px;
     padding: 35px 0px 0px;
     line-height: 35px;
 }
+
+.popup_word_title {
+    margin-top: 16px;
+}
+
+.popup_word_title_nd {
+    margin-top: 35px;
+}
+
+.popup_word_content {
+    padding: 10px 0px 10px 17px;
+    line-height: 35px;
+}
+
+.popup_word_content_nd {
+    padding: 10px 0px 10px 29px;
+}
+
+.popup_word_content_rd {
+    padding: 16px 0px 10px 0px;
+}
+
 .popup_word {
     padding: 35px 0px 20px;
     line-height: 35px;
 }
-.popup_word_nd{
+
+.popup_word_nd {
     margin-left: 20px;
-    padding: 5px 0px 0px;
-    line-height: 35px;
 }
+
 .close_nav {
     width: 320px;
     height: 61px;
@@ -307,3 +332,46 @@ padding-bottom: 20px;
     color: #458514;
     transition: .4s;
 }
+
+@media (max-width: 767.98px) {
+    .popup_content {
+        width: 530px;
+        height: 530px;
+    }
+
+    .popup_title {
+        width: 500px;
+        line-height: 36px;
+    }
+    .popup_title_big {
+        margin: 25px auto 5px;
+        font-weight: 600;
+        font-size: 26px;
+    }
+    
+    .popup_title_small {
+        margin: 0 auto;
+        font-size: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #E0E2E6;
+    }
+    .popup_form_text{
+        width: 500px;
+        height: 360px;
+    }
+    #player{
+        width: 464px;
+        height: 261px;
+        margin: 0 auto;
+    }
+    iframe{
+        width: 464px;
+        height: 261px;
+    }
+    .close {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {}
