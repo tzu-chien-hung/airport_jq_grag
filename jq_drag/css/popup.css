@@ -64,6 +64,7 @@
 
 .pop1 .pop_icon_content {
     border: 3px solid #01BA63;
+    background: #01BA63;
 }
 
 .pop1 .pop_icon_title {
@@ -72,6 +73,7 @@
 
 .pop2 .pop_icon_content {
     border: 3px solid #0185CC;
+    background: #0185CC;
 }
 
 .pop2 .pop_icon_title {
@@ -80,6 +82,7 @@
 
 .pop3 .pop_icon_content {
     border: 3px solid #002F73;
+    background: #002F73;
 }
 
 .pop3 .pop_icon_title {
@@ -88,6 +91,7 @@
 
 .pop4 .pop_icon_content {
     border: 3px solid #FF2C79;
+    background: #FF2C79;
 }
 
 .pop4 .pop_icon_title {
@@ -96,6 +100,7 @@
 
 .pop5 .pop_icon_content {
     border: 3px solid #F2913E;
+    background: #F2913E;
 }
 
 .pop5 .pop_icon_title {
@@ -248,7 +253,7 @@
 }
 
 .popup_nav_word{
-    padding: 20px 0px;
+    padding: 35px 0px 0px;
     line-height: 35px;
 }
 .close_nav {
