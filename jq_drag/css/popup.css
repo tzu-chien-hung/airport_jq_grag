@@ -283,12 +283,22 @@
 
 .popup_word_title {
     margin-top: 16px;
+    font-size: 16px;
 }
 
 .popup_word_title_nd {
-    margin-top: 35px;
+    margin-top: 30px;
+    font-size: 16px;
 }
-
+.popup_word_content{
+    font-size: 16px;
+}
+.popup_word_content_nd {
+    font-size: 16px;
+}
+.popup_word_content_rd {
+    font-size: 16px;
+}
 .popup_word_content {
     padding: 10px 0px 10px 17px;
     line-height: 35px;
@@ -359,7 +369,7 @@
         width: 500px;
         height: 360px;
     }
-    #player{
+    .player{
         width: 464px;
         height: 261px;
         margin: 0 auto;
@@ -374,4 +384,58 @@
     }
 }
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .popup_content {
+        width: 320px;
+        height: 450px;
+    }
+
+    .popup_title {
+        width: 300px;
+    }
+    .popup_word_title {
+        margin-top: 12px;
+    }
+    .popup_title_big {
+        margin: 15px auto 0px;
+        font-weight: 600;
+        font-size: 21px;
+    }
+    
+    .popup_title_small {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .popup_title_small_2{
+        font-size: 16px;
+    }
+    .popup_form_text{
+        width: 300px;
+        height: 320px;
+        padding: 0px 5px;
+        margin: 10px auto 45px;
+    }
+    .popup_word_content {
+        padding: 10px 0px 10px 17px;
+        line-height: 26px;
+    }
+    .popup_word_all{
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .player{
+        width: 280px;
+        height: 157.5px;
+    }
+    iframe{
+        width: 280px;
+        height: 157.5px;
+    }
+    .close {
+        width: 35px;
+        height: 35px;
+        right: 12px;
+        top: 12px;
+    }
+}
