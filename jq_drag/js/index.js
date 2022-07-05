@@ -38,17 +38,17 @@ function handleComplete(evt, comp) {
 	// 	document.getElementById("popupBg").style.display = "block";
 	//     document.getElementById("popupContent").style.display = "block";
 	// })
-	var pop1 = document.getElementById("pop1");
-	var pop2 = document.getElementById("pop2");
-	var pop3 = document.getElementById("pop3");
-	var pop4 = document.getElementById("pop4");
-	var pop5 = document.getElementById("pop5");
-	var pop6 = document.getElementById("pop6");
-	var pop7 = document.getElementById("pop7");
-	var popAll = document.querySelectorAll(".pop_icon_all");
-	var popText = document.getElementById("popText");
-	var popupTitleBig = document.getElementById("popupTitleBig");
-	var popupTitleSmall = document.getElementById("popupTitleSmall");
+	const pop1 = document.getElementById("pop1");
+	const pop2 = document.getElementById("pop2");
+	const pop3 = document.getElementById("pop3");
+	const pop4 = document.getElementById("pop4");
+	const pop5 = document.getElementById("pop5");
+	const pop6 = document.getElementById("pop6");
+	const pop7 = document.getElementById("pop7");
+	const popAll = document.querySelectorAll(".pop_icon_all");
+	const popText = document.getElementById("popText");
+	const popupTitleBig = document.getElementById("popupTitleBig");
+	const popupTitleSmall = document.getElementById("popupTitleSmall");
 	popAll.forEach((el) => {
 		el.addEventListener("click", () => {
 			document.getElementById("popupBg").style.display = "block";
@@ -90,27 +90,33 @@ function handleComplete(evt, comp) {
 		popupTitleBig.innerText = '空側';
 		popupTitleSmall.innerText = '空側車輛電動車化';
 	});
-	var close = document.getElementById("close");
+	const close = document.getElementById("close");
 	close.addEventListener("click", () => {
 		document.getElementById("popupBg").style.display = "none";
 		document.getElementById("popupContent").style.display = "none";
 	});
-	var nav_introduce = document.getElementById("nav_introduce");
-	var nav_outlook = document.getElementById("nav_outlook");
-	var popNavAll = document.querySelectorAll(".nav_title");
-	var popNavText = document.getElementById("popNavText");
-	var closeNav = document.getElementById("closeNav");
+	const nav_introduce = document.getElementById("nav_introduce");
+	const nav_outlook = document.getElementById("nav_outlook");
+	const popNavAll = document.querySelectorAll(".nav_title");
+	const popNavTitle = document.getElementById("popNavTitle");
+	const popNavText = document.getElementById("popNavText");
+	const checked_btn = document.getElementById("nav-toggle");
+	const closeNav = document.getElementById("closeNav");
 	popNavAll.forEach((el) => {
 		el.addEventListener("click", () => {
+			checked_btn.checked = false;
 			document.getElementById("popupNavBg").style.display = "block";
 			document.getElementById("popupNavContent").style.display = "block";
 		})
 	});
+
 	nav_introduce.addEventListener("click", () => {
 		popNavText.innerHTML = '<div class="popup_nav_img"><img src="../img/t3-plan1.jpeg" alt=""></div><div class="popup_nav_word_all"><div class="popup_nav_word">• 桃園國際機場啟用40多年，在服務與設備升級的同時，更兼顧環保策略，實踐永續經營理念，推動機場節能減碳，預定在2050年達到淨零排放的目標。</div><div class="popup_nav_word">• 機場節能減碳在航廈設施、機坪作業車輛、水資源管理和焚化爐升級皆有具體作為。減碳成果持續獲獎，榮獲ISO 14064-1溫室氣體盤查、ISO 50001能源管理系統、ISO 14001環境管理系統，並連續4年獲得ACI綠色機場肯定。</div><div class="popup_nav_word">• 讓我們一起認識桃園機場綠色作為吧!</div></div>';
+		popNavTitle.innerText = '桃園綠機場網頁介紹';
 	});
 	nav_outlook.addEventListener("click", () => {
 		popNavText.innerHTML = '<div class="popup_nav_img popup_nav_img2"><img src="./img/PC/image_future.png" alt=""></div><div class="popup_nav_word_all"><div class="popup_nav_word"><h4>• 近期四大目標</h4><div style="margin-left: 20px;">-水足跡盤查<br>-空、陸側充電樁由現有 54 座增設至 180 座<br>-第三航廈建置太陽能發電機組<br>-評估購置再生能源或設置儲能設備可行性</div></div><div class="popup_nav_word"><h4>• 2025年前，取得機場碳認證（ACA）等級四之認證</h4></div><div class="popup_nav_word"><h4>• 在2050 年達到淨零排放的目標</h4></div></div>';
+		popNavTitle.innerText = '未來展望';
 	});
 	closeNav.addEventListener("click", () => {
 		document.getElementById("popupNavBg").style.display = "none";

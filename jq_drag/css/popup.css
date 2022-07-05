@@ -348,7 +348,17 @@
         width: 530px;
         height: 530px;
     }
-
+    .popup_nav_content {
+        width: 530px;
+        height: 560px;
+    }
+    .popup_nav_title {
+        padding: 25px 0 15px;
+    }
+    .popup_nav_word {
+        padding: 20px 0px 0px;
+        line-height: 30px;
+    }
     .popup_title {
         width: 500px;
         line-height: 36px;
@@ -369,6 +379,18 @@
         width: 500px;
         height: 360px;
     }
+    .popup_nav_form_text {
+        margin: 10px auto;
+        width: 480px;
+        height: 360px;
+    }
+    .popup_nav_img {
+        width: 435px;
+        height: 231.19px;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+    }
     .player{
         width: 464px;
         height: 261px;
@@ -381,6 +403,9 @@
     .close {
         width: 40px;
         height: 40px;
+    }
+    .close_nav {
+        margin: 25px auto 0px;
     }
 }
 
@@ -437,5 +462,37 @@
         height: 35px;
         right: 12px;
         top: 12px;
+    }
+    .popup_nav_content {
+        width: 320px;
+        height: 460px;
+    }
+    .popup_nav_title {
+        padding: 20px 0 10px;
+        font-size: 21px;
+        width: 300px;
+    }
+    .popup_nav_form_text {
+        margin: 10px auto;
+        padding: 0px;
+        width: 300px;
+        height: 300px;
+    }
+    .popup_nav_img {
+        width: 280px;
+        height: 170px;
+    }
+    .popup_nav_word_all{
+        width: 280px;
+        margin: 0 auto;
+    }
+    .popup_nav_word{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .close_nav {
+        width: 280px;
+        height: 43.75px;
+        margin: 20px auto 0px;
     }
 }

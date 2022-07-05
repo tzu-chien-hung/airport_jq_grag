@@ -160,9 +160,10 @@ header {
   }
 
   .nav_logo a {
-    width: 180px;
     height: 65px;
     margin-left: 5%;
+    width: 142px;
+    padding: 12px 0px 11px;
   }
 
   .nav_all {
@@ -190,7 +191,7 @@ header {
   .ham-origin {
     position: absolute;
     top: 47%;
-    left: 26%;
+    left: 30%;
   }
 
   .ham-bar {
