@@ -1,4 +1,4 @@
-@import "./header.css";
+@import "./common/header.css";
 @import "./popup.css";
 
 * {
