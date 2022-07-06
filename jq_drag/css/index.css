@@ -85,7 +85,6 @@
     .game_block {
         width: 200px;
         height: 200px;
-        z-index: 100;
         bottom: 20px;
         left: 20px;
         cursor: pointer;
