@@ -7,11 +7,14 @@
     background-color: rgba(157, 191, 248, 1);
 }
 
+#gameFormDone{
+    display: none;
+}
 .game_main_border1 {
     border: 5px solid #458514;
     border-radius: 20px;
     width: 640px;
-    height: 390px;
+    height: 400px;
     background-color: #C9E3A3;
     position: absolute;
     top: 50%;
@@ -21,7 +24,7 @@
 
 .game_main_border2 {
     width: 631px;
-    height: 381px;
+    height: 391px;
     border: 5px solid #C9E3A3;
     background: #FFFFFF;
     border-radius: 15px;
@@ -75,6 +78,13 @@
     height: 45px;
     margin-left: 32px;
     margin-bottom: 10px;
+    outline:medium;
+}
+.game_input:hover{
+    border: 3px solid #458514;
+}
+.game_input:focus{
+    border: 3px solid #458514;
 }
 
 .game_form_btn {
@@ -201,12 +211,16 @@
 @media (max-width: 575.98px) {
     .game_main_border1 {
         width: 300px;
+        height: 360px;
     }
 
     .game_main_border2 {
         width: 289px;
+        height: 350px;
     }
-
+    .game_main_content_2{
+        margin-top: 66px;
+    }
     .game_main_content {
         width: 260px;
     }
