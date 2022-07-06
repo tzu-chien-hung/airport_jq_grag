@@ -39,3 +39,91 @@ a {
     top: -85px;
     /* width: 100%; */
 }
+
+.game_block {
+    width: 321px;
+    height: 286px;
+    position: relative;
+    z-index: 100;
+    bottom: 35px;
+    left: 35px;
+    cursor: pointer;
+}
+
+.game_block_content {
+    position: absolute;
+    z-index: 100;
+}
+
+.game_block_bear {
+    width: 180px;
+    height: 215px;
+}
+
+.game_block_bear img {
+    width: 100%;
+}
+
+.game_block_chat {
+    width: 165px;
+    height: 105.62px;
+    position: absolute;
+    bottom: 210px;
+    left: 125px;
+}
+
+.game_block_chat img {
+    width: 100%;
+}
+
+.game_block_chat_txt {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    width: 155px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 235px;
+    left: 137px;
+}
+
+@media (max-width: 575.98px) {
+    .game_block {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        z-index: 100;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    .game_block_content {}
+
+    .game_block_bear {
+        width: 122.8px;
+        height: 150.35px;
+        position: absolute;
+        top: 54px;
+    }
+
+    .game_block_chat {
+        width: 135px;
+        height: 73.86px;
+        top: -8px;
+        left: 80px;
+    }
+
+    .game_block_chat_txt {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        width: 135px;
+        height: 44.12px;
+        top: 8px;
+        left: 86px;
+    }
+}

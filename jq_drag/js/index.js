@@ -103,6 +103,7 @@ function handleComplete(evt, comp) {
 	const checked_btn = document.getElementById("nav-toggle");
 	const closeNav = document.getElementById("closeNav");
 	const activity_btn = document.getElementById("navTitleEnd");
+	const activity_btn_bear = document.getElementById("gameBlock");
 	popNavAll.forEach((el) => {
 		el.addEventListener("click", () => {
 			checked_btn.checked = false;
@@ -126,7 +127,9 @@ function handleComplete(evt, comp) {
 	activity_btn.addEventListener("click",() => {
 		location.href="https://tzu-chien-hung.github.io/airport_jq_grag/jq_drag/activity.html"
 	});
-	
+	activity_btn_bear.addEventListener("click",() => {
+		location.href="https://tzu-chien-hung.github.io/airport_jq_grag/jq_drag/activity.html"
+	});
 	var
 		//Registers the "tick" event listener.
 		fnStartAnimation = function () {
