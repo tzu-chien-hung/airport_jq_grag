@@ -2,7 +2,7 @@
 
 const game_form =document.getElementById("gameForm");
 const game_form_done =document.getElementById("gameFormDone");
-const game_form_submit_btn = document.getElementById("gameFormSubmit");
+// const game_form_submit_btn = document.getElementById("gameFormSubmit");
 const game_form_btn_gohome = document.getElementsByClassName("game_form_btn_gohome")[0];
 
 console.log(game_form_btn_gohome)
