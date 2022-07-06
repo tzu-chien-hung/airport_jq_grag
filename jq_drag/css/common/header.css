@@ -59,6 +59,8 @@ header {
 
 .nav_title_end {
   margin-right: 0px;
+  cursor: pointer;
+  margin-right: 35px;
 }
 
 .nav_title_txt {
@@ -66,6 +68,9 @@ header {
 }
 
 .nav_title .nav_title_txt:hover {
+  color: #458514;
+}
+.nav_title_end .nav_title_txt:hover {
   color: #458514;
 }
 
@@ -110,6 +115,9 @@ header {
   }
 
   .nav_title {
+    font-size: 16px;
+  }
+  .nav_title_end {
     font-size: 16px;
   }
 }
@@ -260,7 +268,16 @@ header {
     line-height: 65px;
     margin: 0;
   }
-
+  .nav_title_end {
+    border-bottom: 1px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    line-height: 65px;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 0px;
+  }
   .nav_title_img {
     display: block;
   }
@@ -268,10 +285,8 @@ header {
   .nav_title:hover {
     color: #458514;
   }
-
-  .nav_title_end {
-    border-radius: 0px 0px 10px 10px;
-    border-bottom: 0px;
+  .nav_title_end:hover {
+    color: #458514;
   }
 }
 
