@@ -123,7 +123,14 @@ function handleComplete(evt, comp) {
 		document.getElementById("popupNavBg").style.display = "none";
 		document.getElementById("popupNavContent").style.display = "none";
 	});
-
+	const activity_btn = document.getElementById("navTitleEnd");
+	const activity_btn_bear = document.getElementById("gameBlock");
+	activity_btn.addEventListener("mousedown", () => {
+		location.href = "https://tzu-chien-hung.github.io/airport_jq_grag/jq_drag/activity.html"
+	});
+	activity_btn_bear.addEventListener("mousedown", () => {
+		location.href = "https://tzu-chien-hung.github.io/airport_jq_grag/jq_drag/activity.html"
+	});
 
 	var
 		//Registers the "tick" event listener.
