@@ -95,11 +95,12 @@ function handleComplete(evt, comp) {
 		document.getElementById("popupBg").style.display = "none";
 		document.getElementById("popupContent").style.display = "none";
 	});
+
+
+	// ===============  popup nav  ===============  
 	const nav_introduce = document.getElementById("nav_introduce");
 	const nav_outlook = document.getElementById("nav_outlook");
 	const popNavAll = document.querySelectorAll(".nav_title");
-	// const popNavTitle = document.getElementById("popNavTitle");
-	// const popNavText = document.getElementById("popNavText");
 	const checked_btn = document.getElementById("nav-toggle");
 	const closeNav1 = document.getElementById("closeNav1");
 	const closeNav2 = document.getElementById("closeNav2");
@@ -107,25 +108,29 @@ function handleComplete(evt, comp) {
 	popNavAll.forEach((el) => {
 		el.addEventListener("mousedown", () => {
 			checked_btn.checked = false;
-			document.getElementById("popupNavBg").style.display = "block";
-			document.getElementById("popupNavContent").style.display = "block";
 		})
 	})
 
 	nav_introduce.addEventListener("mousedown", () => {
+		document.getElementById("popupNavBg1").style.display = "block";
 		document.getElementById("popupNavContentIntroduce").style.display = "block";
 	});
-	nav_outlook.addEventListener("mousedown", () => {
-		document.getElementById("popupNavContentOutlook").style.display = "block";
-	});
+
 	closeNav1.addEventListener("mousedown", () => {
-		document.getElementById("popupNavBg").style.display = "none";
+		document.getElementById("popupNavBg1").style.display = "none";
 		document.getElementById("popupNavContentIntroduce").style.display = "none";
 	});
+
+	nav_outlook.addEventListener("mousedown", () => {
+		document.getElementById("popupNavBg2").style.display = "block";
+		document.getElementById("popupNavContentOutlook").style.display = "block";
+	});
+
 	closeNav2.addEventListener("mousedown", () => {
-		document.getElementById("popupNavBg").style.display = "none";
+		document.getElementById("popupNavBg2").style.display = "none";
 		document.getElementById("popupNavContentOutlook").style.display = "none";
 	});
+	// ===============  popup nav  ===============  
 	const activity_btn = document.getElementById("navTitleEnd");
 	const activity_btn_bear = document.getElementById("gameBlock");
 	activity_btn.addEventListener("mousedown", () => {

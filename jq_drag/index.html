@@ -13,8 +13,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="Untitled-1.js?1655284599574"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/youtube.js"></script>
     <script>
         window.addEventListener('load', function () {
             document.getElementById('loading').style = 'display : none';
@@ -84,11 +82,11 @@
                         </div>
                     </label>
                     <div class="nav_title_all">
-                        <div class="nav_title">
-                            <div class="nav_title1 nav_title_txt" id="nav_introduce">機場簡介</div>
+                        <div class="nav_title" id="nav_introduce">
+                            <div class="nav_title1 nav_title_txt">機場簡介</div>
                         </div>
-                        <div class="nav_title">
-                            <div class="nav_title_txt " id="nav_outlook">未來展望</div>
+                        <div class="nav_title" id="nav_outlook">
+                            <div class="nav_title_txt ">未來展望</div>
                         </div>
                         <div class="nav_title_end" id="navTitleEnd">
                             <div class="nav_title_txt">活動專區</div>
@@ -220,10 +218,10 @@
         </div> -->
 
         <div class="popup_nav_all">
-            <div class="popup_bg" id="popupNavBg"></div>
+            <div class="popup_bg" id="popupNavBg1"></div>
             <div class="popup_nav_content" id="popupNavContentIntroduce">
                 <div>
-                    <div class="popup_nav_title" id="popNavTitle">桃園綠機場網頁介紹</div>
+                    <div class="popup_nav_title">桃園綠機場網頁介紹</div>
                     <div class="popup_nav_form_text">
                         <div class="popup_nav_img"><img src="../img/t3-plan1.jpeg" alt=""></div>
                         <div class="popup_nav_word_all">
@@ -235,9 +233,10 @@
                     <div class="close_nav" id="closeNav1">關閉</div>
                 </div>
             </div>
+            <div class="popup_bg" id="popupNavBg2"></div>
             <div class="popup_nav_content" id="popupNavContentOutlook">
                 <div>
-                    <div class="popup_nav_title" id="popNavTitle">未來展望</div>
+                    <div class="popup_nav_title">未來展望</div>
                     <div class="popup_nav_form_text">
                         <div class="popup_nav_img popup_nav_img2"><img src="./img/PC/image_future.png" alt=""></div>
                         <div class="popup_nav_word_all">
@@ -258,31 +257,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="popup_nav_all">
-            <div class="popup_bg" id="popupNavBg"></div>
-            <div class="popup_nav_content" id="popupNavContent">
-                <div>
-                    <div class="popup_nav_title" id="popNavTitle"></div>
-                    <div class="popup_nav_form_text" id="popNavText">
-                        <div class="popup_nav_img popup_nav_img2"><img src="./img/PC/image_future.png" alt=""></div>
-                        <div class="popup_nav_word_all">
-                            <div class="popup_nav_word">
-                                <h4>• 近期四大目標</h4>
-                                <div style="margin-left: 20px;">-水足跡盤查<br>-空、陸側充電樁由現有 54 座增設至 180
-                                    座<br>-第三航廈建置太陽能發電機組<br>-評估購置再生能源或設置儲能設備可行性</div>
-                            </div>
-                            <div class="popup_nav_word">
-                                <h4>• 2025年前，取得機場碳認證（ACA）等級四之認證</h4>
-                            </div>
-                            <div class="popup_nav_word">
-                                <h4>• 在2050 年達到淨零排放的目標</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="close_nav" id="closeNav">關閉</div>
-                </div>
-            </div>
-        </div> -->
         <div class="popup_all">
             <div class="popup_bg" id="popupBg"></div>
             <div class="popup_content" id="popupContent">
@@ -294,7 +268,8 @@
                 </div>
             </div>
         </div>
-
+        <script src="./js/index.js"></script>
+        <script src="./js/youtube.js"></script>
 </body>
 
 </html>
