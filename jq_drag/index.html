@@ -16,6 +16,11 @@
     <script src="./js/index.js"></script>
     <script src="./js/youtube.js"></script>
     <script>
+        window.addEventListener('load', function() {
+            document.getElementById('loading').style = 'display : none';
+        });
+    </script>
+    <script>
         window.addEventListener('resize', function () {
             const canvas = document.getElementById('canvas')
             const draggableArea = document.getElementById('draggableArea')
@@ -62,6 +67,7 @@
 
 
 <body onload="init();" id="body">
+    <div id="loading" class="loading"></div>
     <div id="draggableArea">
         <header>
             <nav class="nav">
