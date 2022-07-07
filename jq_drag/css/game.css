@@ -79,6 +79,8 @@
     margin-left: 32px;
     margin-bottom: 10px;
     outline:medium;
+    padding-left: 10px;
+    font-size: 18px;
 }
 .game_input:hover{
     border: 3px solid #458514;
@@ -240,9 +242,12 @@
     }
 
     .game_input {
-        width: 180px;
+        width: 192px;
         margin-left: 10px;
+        padding-left: 5px;
+        font-size: 14px;
     }
+
     .game_main_two_btn{
         display: block;
     }
