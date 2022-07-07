@@ -117,6 +117,9 @@
     font-size: 24px;
     line-height: 30px;
     color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
 
 .game_main_content_2 {
@@ -253,6 +256,14 @@
         height: 50px;
         font-weight: 500;
         line-height: 30px;
+    }
+    .game_form_btn_input {
+        border: 0;
+        background-color: #458514;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 22px;
+        color: #FFFFFF;
     }
     .game_form_btn_again{
         margin: 20px auto 10px;
